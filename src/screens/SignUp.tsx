@@ -34,9 +34,10 @@ export default class SignUp extends Component<{}, State> {
     const { name, email, password } = this.state;
     return (
       <ImageBackground
-        source={require('../../assets/imgs/welcome.jpg')}
+        source={require('../../assets/imgs/welcome.png')}
         style={[t.flex1, t.bgBlack]}
         imageStyle={[t.flex1, t.opacity50]}
+        blurRadius={5}
       >
         <KeyboardDismiss>
           <SafeAreaView style={[t.flex1, t.justifyCenter]}>

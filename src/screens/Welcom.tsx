@@ -13,9 +13,10 @@ export default class Welcome extends Component<Props> {
     const { navigate } = this.props.navigation;
     return (
       <ImageBackground
-        source={require('../../assets/imgs/welcome.jpg')}
+        source={require('../../assets/imgs/welcome.png')}
         style={[t.flex1, t.bgBlack]}
         imageStyle={[t.flex1]}
+        blurRadius={5}
       >
         <SafeAreaView style={[t.flex1, t.justifyEnd]}>
           <View style={[t.pY10, t.pX4, t.wFull]}>
