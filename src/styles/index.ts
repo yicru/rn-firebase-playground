@@ -1,7 +1,5 @@
 import { StyleSheet } from 'react-native';
 
-type variants = 'primary' | 'secondary';
-
 const colors = {
   primary: '#F72959',
   secondary: '#222B34'
@@ -32,4 +30,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export { styles, colors, variants };
+export { styles, colors };
