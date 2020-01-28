@@ -18,7 +18,7 @@ type State = {
   password: string;
 };
 
-export default class Login extends Component<{}, State> {
+export default class Login extends Component<object, State> {
   constructor(props) {
     super(props);
 
@@ -47,8 +47,8 @@ export default class Login extends Component<{}, State> {
               <Text style={[t.textWhite, t.mB2]}>Email</Text>
               <TextInput
                 style={styles.input}
-                placeholder={'Email address'}
-                placeholderTextColor={'gray'}
+                placeholder="Email address"
+                placeholderTextColor="gray"
                 onChangeText={email => this.setState({ email })}
                 value={email}
               />
@@ -57,14 +57,14 @@ export default class Login extends Component<{}, State> {
               <Text style={[t.textWhite, t.mB2]}>Password</Text>
               <TextInput
                 style={styles.input}
-                placeholder={'Password'}
-                placeholderTextColor={'gray'}
+                placeholder="Password"
+                placeholderTextColor="gray"
                 onChangeText={password => this.setState({ password })}
                 value={password}
               />
             </View>
             <View style={[t.p4]}>
-              <Button variant={'primary'} label={'Login'} onPress={() => {}} />
+              <Button variant="primary" label="Login" onPress={() => {}} />
             </View>
           </SafeAreaView>
         </KeyboardDismiss>

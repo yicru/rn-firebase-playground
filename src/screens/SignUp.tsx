@@ -19,7 +19,7 @@ type State = {
   password: string;
 };
 
-export default class SignUp extends Component<{}, State> {
+export default class SignUp extends Component<object, State> {
   constructor(props) {
     super(props);
 
@@ -49,8 +49,8 @@ export default class SignUp extends Component<{}, State> {
               <Text style={[t.textWhite, t.mB2]}>Name</Text>
               <TextInput
                 style={styles.input}
-                placeholder={'Full name'}
-                placeholderTextColor={'gray'}
+                placeholder="Full name"
+                placeholderTextColor="gray"
                 onChangeText={name => this.setState({ name })}
                 value={name}
               />
@@ -59,8 +59,8 @@ export default class SignUp extends Component<{}, State> {
               <Text style={[t.textWhite, t.mB2]}>Email</Text>
               <TextInput
                 style={styles.input}
-                placeholder={'Email address'}
-                placeholderTextColor={'gray'}
+                placeholder="Email address"
+                placeholderTextColor="gray"
                 onChangeText={email => this.setState({ email })}
                 value={email}
               />
@@ -69,16 +69,16 @@ export default class SignUp extends Component<{}, State> {
               <Text style={[t.textWhite, t.mB2]}>Password</Text>
               <TextInput
                 style={styles.input}
-                placeholder={'Password'}
-                placeholderTextColor={'gray'}
+                placeholder="Password"
+                placeholderTextColor="gray"
                 onChangeText={password => this.setState({ password })}
                 value={password}
               />
             </View>
             <View style={[t.p4]}>
               <Button
-                variant={'primary'}
-                label={'Create Account'}
+                variant="primary"
+                label="Create Account"
                 onPress={() => {}}
               />
             </View>
