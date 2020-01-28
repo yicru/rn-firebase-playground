@@ -1,6 +1,6 @@
 import React from 'react';
-import AppContainer from './src/navigations/router';
+import Router from './src/navigations/Router';
 
 export default function App() {
-  return <AppContainer />;
+  return <Router />;
 }
