@@ -4,6 +4,7 @@ import Welcome from '../screens/Welcom';
 import Login from '../screens/Login';
 import SignUp from '../screens/SignUp';
 import Map from '../screens/Map';
+import ToDo from '../screens/Todo';
 
 const AppNavigator = createStackNavigator(
   {
@@ -27,6 +28,12 @@ const AppNavigator = createStackNavigator(
     },
     Map: {
       screen: Map,
+      navigationOptions: () => ({
+        headerTransparent: true
+      })
+    },
+    ToDo: {
+      screen: ToDo,
       navigationOptions: () => ({
         headerTransparent: true
       })

@@ -21,8 +21,11 @@ const Welcome = ({ navigation }: Props) => {
     >
       <SafeAreaView style={[t.flex1, t.justifyEnd, t.relative]}>
         <View style={[t.absolute, t.top0, t.right0, t.m8]}>
-          <Text onPress={() => navigate('Map')} style={[t.textWhite]}>
+          <Text onPress={() => navigate('Map')} style={[t.textWhite, t.mB3]}>
             map
+          </Text>
+          <Text onPress={() => navigate('ToDo')} style={[t.textWhite]}>
+            ToDo
           </Text>
         </View>
         <View style={[t.pY10, t.pX4, t.wFull]}>
