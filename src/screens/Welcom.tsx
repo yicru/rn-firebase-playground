@@ -19,7 +19,12 @@ const Welcome = ({ navigation }: Props) => {
       imageStyle={[t.flex1]}
       blurRadius={5}
     >
-      <SafeAreaView style={[t.flex1, t.justifyEnd]}>
+      <SafeAreaView style={[t.flex1, t.justifyEnd, t.relative]}>
+        <View style={[t.absolute, t.top0, t.right0, t.m8]}>
+          <Text onPress={() => navigate('Map')} style={[t.textWhite]}>
+            map
+          </Text>
+        </View>
         <View style={[t.pY10, t.pX4, t.wFull]}>
           <Text style={[t.textWhite, t.text4xl, t.textCenter, t.mB2]}>
             Welcome!
